@@ -33,10 +33,10 @@ public class HomeController {
     }
 
     @GetMapping("getAlienById")
-    public String getAlienById(@RequestParam int aid, Model m)
+    public String getAlien(@RequestParam int aid, Model m)
     {
 
-        m.addAttribute("result",alienRepo.findById(aid));
+        m.addAttribute("result",alienRepo.getOne(aid));
 
         return "showAliens";
     }
