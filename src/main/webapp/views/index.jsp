@@ -20,6 +20,15 @@
      		<input type="submit">
      	</form>
 
+        <form action="getAlienByName" >
+     		Enter your name : <input type="text" name="aname"><br>
+     		<input type="submit">
+     	</form>
+
+        <form action="getAlienByNameOrderById" >
+             		Enter your name and we will return you aliens in order by their ids: <input type="text" name="aname"><br>
+             		<input type="submit">
+        </form>
 
 </body>
 </html>
