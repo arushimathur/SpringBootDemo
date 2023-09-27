@@ -18,4 +18,7 @@ public interface AlienRepo extends JpaRepository<Alien,Integer> {
     @Query("from Alien where aname= :name")
     List<Alien> find(@Param("name") String aname);
 
+
+    @Query("from Alien where aid= :id")
+    List<Alien> findByIdNew(@Param("id") int aid);
 }
