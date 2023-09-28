@@ -20,6 +20,7 @@ public class AlienController {
     public List<Alien> getAliensNew()
     {
       List<Alien> aliens =   alienRepo.findAll();
+      System.out.println("After EXECUTIONS...");
       return aliens;
     }
 
